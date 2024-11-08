@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="bodyIndex">
+    <section id="sectionGrid">
+        
+        <form id="LoginGrid" method="GET" action="javascript: Save_datas();">
+            <div id="Title"><h1>Formulário</h1></div>
+            <div class="Griditens">
+                <label for="">Nome</label>
+                <input required type="text" maxlength="50" id="Nome">
+            </div>
+            <div class="Griditens">
+                <label for="">Endereço</label>
+                <input required type="text" id="Endereco">
+            </div>
+            <div class="Griditens">
+                <label for="">CEP</label>
+                <input required type="text" id="CEP" oninput="mascara_cep()" maxlength="10" placeholder=" xx.xxx-xxx">
+            </div>
+            <div class="Griditens">
+                <label for="">CPF</label>
+                <input required type="text" placeholder="xxx.xxx.xxx-xx" id="CPF" oninput="mascara_CPF()" maxlength="14">
+            </div>
+            <div class="Griditens">
+                <label for="" >Telefone</label>
+                <input required type="text" id="telefone" placeholder="(xx) x xxxx-xxxx"  oninput="mascara_telefone()" maxlength="16">
+            </div>
+            <div class="Griditens">
+                <label for="">CNPJ</label>
+                <input required type="text" placeholder="XX.XXX.XXX/0001-XX" id="CNPJ" oninput="mascara_CNPJ()" maxlength="18">
+            </div>
+            <div class="Griditens">
+                <label for="">Codigo</label>
+                <input required type="text" placeholder="xx_xx//xxx-xxx.9.xxx" id="CODIGO" oninput="mascara_codigo()" maxlength="20">
+            </div>
+            <div id="ButtonGrid">
+                <input type="submit">
+            </div>
+        </form>
+
+    </section>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
