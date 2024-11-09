@@ -218,10 +218,10 @@ function Save_datas(){
     let input_nome = document.getElementById("Nome").value
     let input_endereco = document.getElementById("Endereco").value
     let input_CEP = document.getElementById("CEP").value
-    let input_CPF = document.getElementById("CPF")
-    let input_telefone = document.getElementById("telefone")
-    let input_CNPJ = document.getElementById("CNPJ")
-    let input_CODIGO = document.getElementById("CODIGO")
+    let input_CPF = document.getElementById("CPF").value
+    let input_telefone = document.getElementById("telefone").value
+    let input_CNPJ = document.getElementById("CNPJ").value
+    let input_CODIGO = document.getElementById("CODIGO").value
 
     localStorage.setItem("Nome", input_nome)
     localStorage.setItem("Endereco", input_endereco)
@@ -230,6 +230,7 @@ function Save_datas(){
     localStorage.setItem("telefone", input_telefone)
     localStorage.setItem("CNPJ", input_CNPJ)
     localStorage.setItem("CODIGO", input_CODIGO)
+    
     window.location.href = "confirm.html"
 }
 
@@ -242,6 +243,12 @@ function read_datas(){
     let input_CNPJ = localStorage.getItem("CNPJ")
     let input_CODIGO = localStorage.getItem("CODIGO")
 
-    console.log(input_nome)
+    document.getElementById("ShowNome").innerHTML = input_nome
+    document.getElementById("ShowEndereco").innerHTML = input_endereco
+    document.getElementById("ShowCEP").innerHTML = input_CEP
+    document.getElementById("ShowCPF").innerHTML = input_CPF
+    document.getElementById("ShowTelefone").innerHTML = input_telefone
+    document.getElementById("ShowCNPJ").innerHTML = input_CNPJ
+    document.getElementById("ShowCodigo").innerHTML = input_CODIGO
 
 }

@@ -111,9 +111,27 @@ body{
     display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-rows: 1fr 4fr;
 
 }
 #message h1{
     color: #ffffff;
     font-size: 2.5em;
+}
+
+#GridShow{
+    width: 100%;
+    height: 100%;
+    display: grid;
+}
+
+.DivsGridShow{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5em;
+
 }
